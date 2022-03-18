@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+.logo-dcm{
+    width: 20%;
+}
+.form-search{
+    width: 90%;
+}
+.form-search-desktop{
+    width: 100%;
+}
+.perfil-navbar{
+    width: 100px;
+}
+
 /*--------------header prototipe-----------*/
 .header{
     background: linear-gradient(200deg,#000000);
