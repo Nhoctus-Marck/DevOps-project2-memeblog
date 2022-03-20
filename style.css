@@ -16,7 +16,7 @@
     width: 100px;
 }
 
-/*--------------header prototipe-----------*/
+/*--------------header -----------*/
 .header{
     background: linear-gradient(200deg,#000000);
     border: 3px solid black;
@@ -81,7 +81,7 @@
     background-color: white;
 }
 
-/*----------- fin protitipe  --------*/
+/*----------- fin  --------*/
 
 
 body{
@@ -126,4 +126,77 @@ img{
     }
     
     
+}
+
+.footerA{
+    width: 100%;
+    background: linear-gradient(270deg,#000000,#2c0049,#4e0083,#6800ad);
+    
+}
+.footerA .team1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    
+    
+}
+.footerA .team1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    
+    
+}
+.footerA .team1 .box figure img{
+    width: 250px;
+
+}
+.footerA .team1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.footerA .team1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    
+}
+.footerA .team1 .box .redsocial .src{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+    
+}
+.footerA .team1 .box .redsocial .src:hover{
+    color: #6800ad;
+}
+
+.footerA .team2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:800px){
+    .footerA .team1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;       
+    }
+   
 }
