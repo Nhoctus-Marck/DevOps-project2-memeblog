@@ -16,7 +16,7 @@
     width: 100px;
 }
 
-/*--------------header prototipe-----------*/
+/*--------------header -----------*/
 .header{
     background: linear-gradient(200deg,#000000);
     border: 3px solid black;
@@ -81,10 +81,13 @@
     background-color: white;
 }
 
-/*----------- fin protitipe  --------*/
+/*----------- fin  --------*/
 
 
-
+body{
+    margin: 0;
+    padding: 20px 5%;
+}
 img{
     width: 100%;
     border-radius: 20px;
