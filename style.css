@@ -17,15 +17,115 @@
 }
 
 /*--------------header -----------*/
-.header{
-    background: linear-gradient(200deg,#000000);
-    border: 3px solid black;
-    height: 70px;
+header{
     position: fixed;
-    width: 100%;
     top: 0;
-    left: 0;
-    z-index: 1;   
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+}
+
+.container-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-section aside{
+    position: fixed;
+    width: 18%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container-section section{
+    width: 80%;
+    margin: 100px 25px 0 20%;
+}
+
+.profiles{
+    padding: 10px;
+    margin-top: 95px;
+    border: 1px solid black;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.profile .btn-on{
+    border: none;
+    border-radius: 10px;
+}
+
+.profile .btn-off{
+    display: none;
+}
+
+.img-profile{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.img-1{
+    background-color: red;
+}
+
+.img-2{
+    background-color: blue;
+}
+
+.img-3{
+    background-color: chocolate;
+}
+
+.img-4{
+    background-color: salmon;
+}
+
+.img-5{
+    background-color: aqua;
+}
+
+@media (max-width:600px){
+    .container-section aside{
+        display: none;
+    }
+    
+    .container-section section{
+        width: 90%;
+        margin: 100px auto
+    }
+}
+
+@media (max-width:991px){
+    .container-section aside{
+        margin: 120px auto
+
+    }
+}
+
+@media (max-width:921px){
+    .profile .btn-on{
+        display: none;
+    }
+    .profile .btn-off{
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        padding: 0;
+        border-style: none;
+    }
+
+    .profile .btn-off:hover{
+        background-color: darkgrey;
+    }
 }
 
 .section-nav{
@@ -128,7 +228,7 @@
 .footerA{
     width: 100%;
     background: linear-gradient(270deg,#000000,#2c0049,#4e0083,#6800ad);
-    
+    position: absolute;
 }
 .footerA .team1{
     width: 100%;
